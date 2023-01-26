@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font: size 64px;
+    text-align:center
+   
+}
+
+.contenedor{
+   
+    width: 100%;
+    height: auto;
+    
+/*    display: grid;
+    place-content: center;*/
+}
+
+
+.box-left{
+    width: 38%;
+    float:left;
+    background-image: url(https://i.pinimg.com/originals/3b/e8/42/3be8428d2d8361f616072dbe4b5809d3.jpg);
+    height: 960px;
+    display: flex;
+   align-items: center;
+   
+   
+}
+#texto-principal{
+    color:white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#img-left{
+    width: 100%;
+    height:960px;
+
+}
+
+.box-right{
+    width: 62%;
+    float:left;
+    display: grid;
+    place-content: center;
+    
+    
+}
+
+.btn-validate{
+    display: grid;
+    place-content: center;
+}
+
+
+/*.photo{
+    width: 100px;
+    background-color: aqua;
+
+}
+
+
+.photo-left{
+
+    display: grid;
+    place-content: left;
+
+}*/

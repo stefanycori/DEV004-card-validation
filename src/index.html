@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main>
 
-      <div class="contenedor">
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="box-left">
-    
-    
-          <div class="photo-left">
-            
-          <h1 id="texto-principal">
+<body>
+  <header></header>
+  <main>
+
+    <div class="contenedor">
+
+      <div class="box-left">
+
+
+        <div class="photo-left">
+
+         <!-- <h1 id="texto-principal">
             Módulo de validación de tarjeta bootcamp Laboratoria
-          </h1>
-          </div>
-    
+          </h1> -->
         </div>
-    
-        <div class="box-right">
-    
-          <h1>Número de Tarjeta</h1>
-    
-          <div class="photo">
-            <img src="https://www.visa.co.ve/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Tarjetas/visa-infinite-400x225.jpg" alt="MDN">
-      
-          </div>
-      
-      
-          <div>
-            <input id="cardnumber"></input>
-            
-          </div>
-      
-      
-          <div class="bt-validate">
-            <button onclick="validate()">Validar</button>
-          </div>
-      
 
-          <!--<img src="./img/fiesta.jpg">-->
-      
-          <div id="result"></div>
-    
+      </div>
+
+      <div class="box-right">
+
+
+        <h1>Número de Tarjeta</h1>
+
+        <div class="photo item-center">
+          <img
+            src="https://www.visa.co.ve/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/Tarjetas/visa-infinite-400x225.jpg" 
+            alt="MDN">
+
         </div>
 
 
-    </main>
-    <footer></footer>
-    <script src="index.js" ></script>
-  </body>
+        <div class="item-center">
+
+          <input id="cardnumber"></input>
+
+        </div>
+
+
+        <div class="item-center">
+
+          <button id="btn-validar" onclick="validate()">Validar</button>
+        </div>
+
+        <div class="item-center item-bottom">
+          <p id="letraabajo">Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web,
+            comunícate
+            con nosotros al 311-9898 o a través de nuestros medios digitales.</p>
+        </div>
+
+
+        <!--<img src="./img/fondo2.jpg">-->
+
+        <!--<div id="result"></div>-->
+
+
+
+      </div>
+
+
+
+  </main>
+  <footer></footer>
+  <script src="index.js"></script>
+</body>
+
 </html>

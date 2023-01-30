@@ -2,8 +2,9 @@
 
 h1{
     font-family: 'Oswald', sans-serif;
-    font: size 64px;
+    font-size: 40px;
     text-align:center
+
    
 }
 
@@ -20,17 +21,21 @@ h1{
 .box-left{
     width: 38%;
     float:left;
-    background-image: url(https://i.pinimg.com/originals/3b/e8/42/3be8428d2d8361f616072dbe4b5809d3.jpg);
+    background-image: url("./img/cajero.jpg");
     height: 960px;
     display: flex;
    align-items: center;
+
    
    
 }
 #texto-principal{
-    color:white;
-    font-size: 50px;
+    color:rgba(248, 223, 83, 0.904);
+    font-size: 55px;
     font-family: 'Oswald', sans-serif;
+    width: 378.100;
+   
+    align-items: center;
 
 }
 
@@ -42,16 +47,22 @@ h1{
 
 .box-right{
     width: 62%;
+    height: 100%;
     float:left;
     display: grid;
     place-content: center;
+    position:relative;
+    
     
     
 }
 
-.btn-validate{
+.item-center{
     display: grid;
     place-content: center;
+    margin-top :10px;
+    margin-bottom: 10px;
+
 }
 
 
@@ -59,7 +70,7 @@ h1{
     width: 100px;
     background-color: aqua;
 
-}
+}*/
 
 
 .photo-left{
@@ -67,4 +78,52 @@ h1{
     display: grid;
     place-content: left;
 
-}*/
+}
+
+body{
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+#btn-validar{
+     width: 250px;
+     height: 40px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+    background-color: rgb(255, 153, 0);
+    border-color:rgb(255, 153, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    color:aliceblue;
+
+    
+   
+
+}
+
+#cardnumber{
+    padding: 10px; 
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    }
+
+    #letraabajo{
+        color:darkgray;
+        font-size: 15px;
+        
+       
+        
+    }
+
+    .item-bottom{
+        background-color: yellow;
+        position: absolute;
+        bottom: 0;
+
+
+    }

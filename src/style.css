@@ -3,7 +3,8 @@
 h1{
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
-    text-align:center
+    text-align:center;
+    color:rgb(65,116,161) ;
 
    
 }
@@ -11,7 +12,8 @@ h1{
 .contenedor{
    
     width: 100%;
-    height: auto;
+    height: 100vh; /*view height toda la pantalla*/
+    display: flex;
     
 /*    display: grid;
     place-content: center;*/
@@ -19,15 +21,10 @@ h1{
 
 
 .box-left{
-    width: 38%;
-    float:left;
-    background-image: url("./img/cajero.jpg");
-    height: 960px;
-    display: flex;
-   align-items: center;
+   width: 38%;
+   background-image: url("./img/cajero.jpg");
+   background-size: cover;
 
-   
-   
 }
 #texto-principal{
     color:rgba(248, 223, 83, 0.904);
@@ -47,21 +44,18 @@ h1{
 
 .box-right{
     width: 62%;
-    height: 100%;
-    float:left;
-    display: grid;
-    place-content: center;
-    position:relative;
-    
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
 
 .item-center{
-    display: grid;
-    place-content: center;
+    /*display: grid;
+    place-content: center;*/
     margin-top :10px;
-    margin-bottom: 10px;
+    text-align: center;
+    /*margin-bottom: 10px;*/
 
 }
 
@@ -121,9 +115,12 @@ body{
     }
 
     .item-bottom{
-        background-color: yellow;
-        position: absolute;
-        bottom: 0;
+       /* background-color: yellow;*/
+        width: 50%;
+
+    }
 
 
+    .central{
+        flex:1;
     }

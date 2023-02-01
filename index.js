@@ -9,12 +9,13 @@ const input = document.getElementById('card-number');
 const text = document.getElementById('resultado');
 
 let cardTmp = "";
+let cardNumber = "";
 
 
 boton.addEventListener('click', function () {
 
   if (input.value !== "") {
-    const valid = isValid(input.value);
+    const valid = isValid(cardNumber);
 
     if (valid) {
       text.style.color = "green";
@@ -44,6 +45,7 @@ input.addEventListener('keyup', function (event) {
   }
 
   let encryptedCard = "";
+  cardNumber = cardTmp;
 
   encryptedCard = maskify(input.value);
   input.value = encryptedCard;
@@ -52,8 +54,6 @@ input.addEventListener('keyup', function (event) {
   if (input.value.length === 0) {
     cardTmp = "";
   }
-
-
 
 });
 

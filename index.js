@@ -1,22 +1,61 @@
-import {isValid, maskify} from './validator.js';
+import { isValid, maskify } from './validator.js';
 
 
 
-var boton = document.getElementById('btn-validar');
+const boton = document.getElementById('btn-validar');
 
-boton.addEventListener('click', function (event) {
+const input = document.getElementById('card-number');
 
-    const valid = isValid(document.getElementById("cardnumber").value);
+const text = document.getElementById('resultado');
+
+let cardTmp = "";
+
+
+boton.addEventListener('click', function () {
+
+  if (input.value !== "") {
+    const valid = isValid(input.value);
+
     if (valid) {
-      window.alert("Tarjeta valida")
-    
+      text.style.color = "green";
+      text.innerHTML = "Tarjeta válida."
     }
     else {
-      window.alert("Tarjeta invalida")
+      text.style.color = "red";
+      text.innerHTML = "Tarjeta inválida."
     }
+  } else {
+    window.alert("Ingrese un número de tarjeta.")
+  }
 
-    console.log(maskify(document.getElementById("cardnumber").value));
 });
 
 
-//console.log(validator);
+input.addEventListener('keyup', function (event) {
+
+  const code = (event.which) ? event.which : event.keyCode;
+
+  if ((code > 47 && code < 58) || (code > 95 && code < 106)) {
+    cardTmp = cardTmp + event.key;
+  }
+
+  if (code !== 8) {
+    input.value = cardTmp;
+  }
+
+  let encryptedCard = "";
+
+  encryptedCard = maskify(input.value);
+  input.value = encryptedCard;
+
+
+  if (input.value.length === 0) {
+    cardTmp = "";
+  }
+
+
+
+});
+
+
+

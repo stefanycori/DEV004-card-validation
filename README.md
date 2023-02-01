@@ -237,14 +237,19 @@ pagina web, debe ser "desplegada" (accesible públicamente online) usando
 GitHub Pages.
   
 **4. Un README que contiene una definición del producto.**  
-En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
+En el README cuéntanos cómo pensaste en los usuarios 
+- en la manera de facilitar la minteracion con el sistema
+cuál fue tu proceso
+- centarme en que el modo de interaccion se adecuada
 para definir el producto final a nivel de experiencia y de interfaz.  
 Estas preguntas sirven como guía:
 
 * Quiénes son los principales usuarios de producto.
+- todo tipo de usuario que cuente con una tarjeta
 * Cuáles son los objetivos de estos usuarios en relación con tu producto.
+-verificar la validacion de la atrjeta
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
+-Que la interracion y la equivocacion del numero de tarjeta al igresarlo sea mas facil
 Con estos requisitos cumplidos puedes
 [considerar pedir tu sesión de Project Feedback con unx coach.](#9-para-considerar-project-feedback)
 
